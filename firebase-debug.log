@@ -1,0 +1,93 @@
+[debug] [2023-08-29T09:35:01.101Z] ----------------------------------------------------------------------
+[debug] [2023-08-29T09:35:01.102Z] Command:       C:\Users\jmuljana\AppData\Roaming\node-v18.17.0-win-x64\node.exe C:\Users\jmuljana\AppData\Roaming\node-v18.17.0-win-x64\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2023-08-29T09:35:01.102Z] CLI Version:   12.5.2
+[debug] [2023-08-29T09:35:01.102Z] Platform:      win32
+[debug] [2023-08-29T09:35:01.103Z] Node Version:  v18.17.0
+[debug] [2023-08-29T09:35:01.103Z] Time:          Tue Aug 29 2023 19:35:01 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2023-08-29T09:35:01.103Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-29T09:35:01.114Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=319833025&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2023-08-29T09:35:22.523Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: read ECONNRESET
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2023-08-29T09:35:22.523Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[debug] [2023-08-29T09:35:51.155Z] >>> [apiv2][query] POST https://accounts.google.com/o/oauth2/token [none]
+[debug] [2023-08-29T09:35:51.155Z] >>> [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[debug] [2023-08-29T09:35:51.412Z] <<< [apiv2][status] POST https://accounts.google.com/o/oauth2/token 200
+[debug] [2023-08-29T09:35:51.412Z] <<< [apiv2][body] POST https://accounts.google.com/o/oauth2/token [omitted]
+[info] 
+[info] +  Success! Logged in as johannes.edu@gmail.com 
+[debug] [2023-08-29T09:36:01.471Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\jmuljana\AppData\Roaming\node-v18.17.0-win-x64\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-29T09:36:55.385Z] ----------------------------------------------------------------------
+[debug] [2023-08-29T09:36:55.386Z] Command:       C:\Users\jmuljana\AppData\Roaming\node-v18.17.0-win-x64\node.exe C:\Users\jmuljana\AppData\Roaming\node-v18.17.0-win-x64\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2023-08-29T09:36:55.386Z] CLI Version:   12.5.2
+[debug] [2023-08-29T09:36:55.387Z] Platform:      win32
+[debug] [2023-08-29T09:36:55.387Z] Node Version:  v18.17.0
+[debug] [2023-08-29T09:36:55.387Z] Time:          Tue Aug 29 2023 19:36:55 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2023-08-29T09:36:55.387Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-29T09:36:55.389Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] Already logged in as johannes.edu@gmail.com
+[debug] [2023-08-29T09:37:05.426Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\jmuljana\AppData\Roaming\node-v18.17.0-win-x64\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-08-29T09:39:37.750Z] ----------------------------------------------------------------------
+[debug] [2023-08-29T09:39:37.751Z] Command:       C:\Users\jmuljana\AppData\Roaming\node-v18.17.0-win-x64\node.exe C:\Users\jmuljana\AppData\Roaming\node-v18.17.0-win-x64\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-08-29T09:39:37.751Z] CLI Version:   12.5.2
+[debug] [2023-08-29T09:39:37.752Z] Platform:      win32
+[debug] [2023-08-29T09:39:37.752Z] Node Version:  v18.17.0
+[debug] [2023-08-29T09:39:37.752Z] Time:          Tue Aug 29 2023 19:39:37 GMT+1000 (Australian Eastern Standard Time)
+[debug] [2023-08-29T09:39:37.752Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-08-29T09:39:37.762Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-08-29T09:39:37.788Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-29T09:39:37.788Z] > authorizing via signed-in user (johannes.edu@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\jmuljana\AppData\apps\reactproject
+
+[debug] [2023-08-29T09:39:56.758Z] *** [apiv2] error from fetch(https://firebase-public.firebaseio.com/cli.json, {"headers":{},"method":"GET"}): FetchError: request to https://firebase-public.firebaseio.com/cli.json failed, reason: read ECONNRESET
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2023-08-29T09:39:56.759Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-08-29T10:23:21.487Z] > refreshing access token with scopes: []
+[debug] [2023-08-29T10:23:21.488Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-08-29T10:23:21.488Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-08-29T10:23:43.089Z] *** [apiv2] error from fetch(https://www.googleapis.com/oauth2/v3/token, {"headers":{},"method":"POST","body":{"_overheadLength":545,"_valueLength":212,"_valuesToMeasure":[],"writable":false,"readable":true,"dataSize":0,"maxDataSize":2097152,"pauseStreams":true,"_released":true,"_streams":[],"_currentStream":null,"_insideLoop":false,"_pendingNext":false,"_boundary":"--------------------------750625832668006663345732","_events":{},"_eventsCount":1}}): FetchError: request to https://www.googleapis.com/oauth2/v3/token failed, reason: read ECONNRESET
+[debug] [2023-08-29T10:23:43.089Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-08-29T10:23:48.096Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\jmuljana\AppData\Roaming\node-v18.17.0-win-x64\node_modules\firebase-tools\lib\utils.js:254:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
