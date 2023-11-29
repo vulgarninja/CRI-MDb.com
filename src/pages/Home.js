@@ -19,13 +19,13 @@ export function Home(props) {
   const ItemCards = books.map( ( book, itemkey ) => {
     const itemLink = `detail/${book.id}`
     return(
-      <Col md={4} className="mb-4" key={itemkey}>
+      <Col md={3} className="mb-4" key={itemkey}>
         <Card key={itemkey} className="position-relative">
           <a href={itemLink} className="position-absolute" style={{top:0, left:0, right:0,bottom:0}}>
           </a>
           <ItemImage source={ book.cover_image} />
           <Card.Body>
-            <Card.Title>{ book.book_title }</Card.Title>
+            <Card.Title>{ book.movie_title }</Card.Title>
           </Card.Body>
         </Card>
       </Col>

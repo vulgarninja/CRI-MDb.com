@@ -23,7 +23,7 @@ export function Detail(props) {
       <Container>
         <Row>
           <Col>
-            <h1>{bookData.book_title}</h1>
+            <h1>{bookData.movie_title}</h1>
           </Col>
         </Row>
         <Row>
@@ -32,15 +32,14 @@ export function Detail(props) {
           </Col>
           <Col md={6}>
             <h2>More information</h2>
-            <h3>Summary</h3>
-            <p>{bookData.summary}</p>
-            <h3>Author</h3>
-            <p>{ bookData.author }</p>
-            <h3>ISBN</h3>
-            <p>ISBN10 {bookData.isbn10}</p>
-            <p>ISBN13 {bookData.isbn13}</p>
+            <p>{bookData.synopsis}</p>
+            <h3>Starring</h3>
+            <h3>Director</h3>
+            <p>{ bookData.director }</p>
+            <h3>ISAN Number</h3>
+            <p>{ bookData.ISAN }</p>
             <Form>
-              <h3>Rewiew this book</h3>
+              <h3>Review this movie</h3>
               <Form.Group>
                 <Form.Label>Star</Form.Label>
                 <Form.Select>
@@ -53,11 +52,11 @@ export function Detail(props) {
               </Form.Group>
               <Form.Group>
                 <Form.Label>Title</Form.Label>
-                <Form.Control type="text" placeholder="I love this book" />
+                <Form.Control type="text" placeholder="I love this movie" />
               </Form.Group>
               <Form.Group>
                 <Form.Label>Review</Form.Label>
-                <Form.Control as="textarea" rows={4} cols={30} placeholder="I could not put this down!" />
+                <Form.Control as="textarea" rows={4} cols={30} placeholder="I could not stop watching!" />
               </Form.Group>
               <Button type="submit" variant="primary">Submit</Button>
             </Form>

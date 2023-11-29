@@ -2,6 +2,7 @@ import Container from "react-bootstrap/Container"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import NavDropdown from "react-bootstrap/NavDropdown"
+// import logo from 
 
 export function Header(props) {
   // props.items is the value of nav state in App.js
@@ -28,7 +29,7 @@ export function Header(props) {
   return (
     <Navbar>
       <Container>
-        <Navbar.Brand>App</Navbar.Brand>
+        <Navbar.Brand><img src="./images/crimdb_logo.png"/></Navbar.Brand>
         <Nav>
           {Links}
           <Account user={ props.user } />

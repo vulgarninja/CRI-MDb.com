@@ -10,7 +10,7 @@ export function ItemImage ( props ) {
 
   useEffect( () => {
     if( props.source ) {
-      const imgref = ref( storage, `book_covers/${props.source}`)
+      const imgref = ref( storage, `cover_images/${props.source}`)
       getDownloadURL( imgref )
       .then( (url) => setImage(url) )
       .catch( err => console.log(err) )
@@ -29,7 +29,7 @@ export function ItemImage ( props ) {
   }
   else {
     return (
-      <Card.Img style={{aspectRatio: "3/4"}} variant='top' src={image} />
+      <Card.Img style={{aspectRatio: "4:3"}} variant='top' src={image} />
     )
   }
 }
