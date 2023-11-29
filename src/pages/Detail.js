@@ -34,6 +34,7 @@ export function Detail(props) {
             <h2>More information</h2>
             <p>{bookData.synopsis}</p>
             <h3>Starring</h3>
+            <p>{bookData.starring.join(', ')}</p>
             <h3>Director</h3>
             <p>{ bookData.director }</p>
             <h3>ISAN Number</h3>
