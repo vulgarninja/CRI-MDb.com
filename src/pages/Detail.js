@@ -34,7 +34,7 @@ export function Detail(props) {
 
   if (bookData) {
     return (
-      <Container>
+      <Container style={{ paddingTop: '20px'}}>
         <Row>
           <Col>
             <h1>{bookData.movie_title}</h1>
@@ -61,7 +61,7 @@ export function Detail(props) {
             <Form>
               <h4>Review this movie</h4>
               {/* ... (previous code) */}
-              <Button type="submit" variant="primary">Submit</Button>
+              <Button type="submit" variant="dark">Submit</Button>
             </Form>
             <Rating
               count={5}
@@ -71,7 +71,7 @@ export function Detail(props) {
               color="#ffd700"
               activeColor="#ffd700"
             />
-            <Button variant="primary" onClick={openTrailer} className="trailer-button">
+            <Button variant="dark" onClick={openTrailer} className="trailer-button">
               Trailer
             </Button>
           </Col>

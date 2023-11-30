@@ -29,7 +29,7 @@ export function Header(props) {
 
   return (
     <div className="NavBar">
-    <Navbar>
+    <Navbar bg="dark" data-bs-theme="dark">
       <Container>
         <Navbar.Brand><img src={crimdbLogo} alt="Logo" style={{ width: '200px', height: '100px'}}/></Navbar.Brand>
         <Nav>
