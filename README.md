@@ -1,6 +1,7 @@
-**Domains**
-ramese-diploma-bd3c0.web.app
-ramese-diploma-bd3c0.firebaseapp.com
+**Domains:**
+<br>
+https://ramese-diploma-bd3c0.web.app <br>
+https://ramese-diploma-bd3c0.firebaseapp.com
 
 # Getting Started with Create React App
 
