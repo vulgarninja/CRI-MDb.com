@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import Container from "react-bootstrap/Container"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
@@ -31,7 +32,7 @@ export function Header(props) {
     <div className="NavBar">
     <Navbar bg="dark" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand><img src={crimdbLogo} alt="Logo" style={{ width: '200px', height: '100px'}}/></Navbar.Brand>
+        <Navbar.Brand as={Link} to="/"><img src={crimdbLogo} alt="Logo" style={{ width: '200px', height: '100px'}}/></Navbar.Brand>
         <Nav>
           {Links}
           <Account user={ props.user } />
