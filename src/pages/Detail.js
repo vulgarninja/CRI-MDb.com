@@ -37,7 +37,7 @@ export function Detail(props) {
       <Container style={{ paddingTop: '20px'}}>
         <Row>
           <Col>
-            <h1>{bookData.movie_title}</h1>
+            <h1>{bookData.movie_title} ({bookData.year})</h1>
           </Col>
         </Row>
         <Row>
