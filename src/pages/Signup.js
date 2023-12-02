@@ -59,7 +59,7 @@ export function Signup ( props ) {
   }, [userpassword])
 
   return ( 
-    <Container>
+    <Container style={{ paddingTop: '20px'}}>
       <Row>
         <Col md={ {span: 4, offset: 4} }>
           <Form onSubmit={submitHandler} >
@@ -91,7 +91,7 @@ export function Signup ( props ) {
               />
             </Form.Group>
             <Button 
-              variant="primary" 
+              variant="dark" 
               className="mt-3 w-100" 
               type="submit"
               disabled={ (validemail && validpassword && validusername) ? false : true }
