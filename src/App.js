@@ -31,6 +31,7 @@ import { Detail } from "./pages/Detail"
 //contexts
 import { AuthContext } from "./contexts/AuthContext"
 import { StorageContext } from "./contexts/StorageContext"
+import { FSContext } from "./contexts/FSContext"
 
 
 function App() {
@@ -139,6 +140,7 @@ function App() {
       <Header items={nav} user={auth} />
       <AuthContext.Provider value={auth}>
         <StorageContext.Provider value={FBstorage}>
+          <FSContext.Provider value={FBdb}>
           <Routes>
             <Route path="/" element={<Home items={data} />} />
             <Route path="/about" element={<About greeting="Hey you, this is about page!" handler={saySomething} />} />
@@ -148,6 +150,7 @@ function App() {
             <Route path="/signin" element={<Signin handler={signIn} authstate={auth} />} />
             <Route path="/detail/:id" element={<Detail handler={getDocument} />} />
           </Routes>
+          </FSContext.Provider>
         </StorageContext.Provider>
       </AuthContext.Provider>
     </div>

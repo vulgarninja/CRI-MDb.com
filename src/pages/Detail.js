@@ -4,11 +4,10 @@ import Col from "react-bootstrap/Col";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { ItemImage } from "../components/ItemImage";
-import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import "../App.css"
-import StarRating from "../components/StarRating"
-
+import { ReviewForm } from "../components/ReviewForm"
+import { Reviews } from "../components/Reviews"
 
 export function Detail(props) {
   const [bookData, setBookData ] = useState();
@@ -67,36 +66,27 @@ export function Detail(props) {
             <h4>ISAN Number</h4>
             <p>{bookData.ISAN}</p>
             <Container style={{padding: 0}}className="splitInfo">
-              <Col  className="ColInfo">
+            <Col>
             <h4>Duration</h4>
             <p>{bookData.duration} mins</p>
             </Col>
-            <Col  className="ColInfo">
+            <Col>
             <h4>Genre</h4>
             <p>{bookData.genre.join(', ')}</p>
             </Col>
             </Container>
-            
-            {/* Review Form */}
-            <Form>
-              <h4>Review this movie</h4>
-              <textarea 
-                placeholder="Write a Review"
-                style={styles.textarea}
-              />
-              <StarRating />
-              <Button type="submit" variant="dark" style={styles.button}>Submit</Button>
-            </Form>
-
+            <Row>
+              <Col>
+                <ReviewForm booktitle={bookData.movie_title} bookId={bookData.id} />
+              </Col>
+            </Row>
             {/* Trailer Button */}
             <Button variant="dark" style={styles.button} onClick={openTrailer} className="trailer-button">
               Watch Trailer
             </Button>
           </Col>
         </Row>
-        <Row>
-          <Col></Col>
-        </Row>
+        <Reviews bookId={bookData.id}  />
       </Container>
     );
   } else {
