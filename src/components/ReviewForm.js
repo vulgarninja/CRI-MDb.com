@@ -1,8 +1,8 @@
+import React, { useContext, useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { AuthContext } from "../contexts/AuthContext";
 import { FSContext } from "../contexts/FSContext";
-import { useContext, useState, useEffect } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import StarRating from "../components/StarRating";
 
@@ -31,7 +31,7 @@ export function ReviewForm(props) {
     console.log(ref);
   };
 
-  console.log("stars", star)
+  console.log("stars", star);
 
   if (auth) {
     return (
@@ -44,10 +44,10 @@ export function ReviewForm(props) {
             name="title"
             onChange={(evt) => setTitle(evt.target.value)}
           />
-          </Form.Group>
+        </Form.Group>
         <Form.Group>
           {/* My Component */}
-          <StarRating onRatingChange={(evt) => setStar(evt.target.value)}/>
+          <StarRating onRatingChange={(value) => setStar(value)} />
         </Form.Group>
         <Form.Group>
           <Form.Control
