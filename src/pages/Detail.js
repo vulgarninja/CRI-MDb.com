@@ -6,8 +6,10 @@ import { useParams } from "react-router-dom";
 import { ItemImage } from "../components/ItemImage";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
-import Rating from "react-rating-stars-component";
 import "../App.css"
+import StarRating from "../components/StarRating"
+
+
 export function Detail(props) {
   const [bookData, setBookData ] = useState();
 
@@ -19,17 +21,27 @@ export function Detail(props) {
     }
   }, [id]);
 
+  const styles = {
+    textarea: {
+      border: "1px solid #a9a9a9",
+      borderRadius: 5,
+      height: 200,
+      width: 500,
+      padding: 10
+    },
+
+    button: {
+      padding: 10,
+      margin: '20px 0'
+    }
+  }
+
   const openTrailer = () => {
     if (bookData && bookData.youtube_link) {
       window.open(bookData.youtube_link, '_blank');
     } else {
       console.error('YouTube link not available');
     }
-  };
-
-  const handleRatingChange = (newRating) => {
-    // Handle the logic for submitting the rating to your database
-    console.log('New Rating:', newRating);
   };
 
   if (bookData) {
@@ -54,25 +66,31 @@ export function Detail(props) {
             <p>{bookData.director}</p>
             <h4>ISAN Number</h4>
             <p>{bookData.ISAN}</p>
+            <Container style={{padding: 0}}className="splitInfo">
+              <Col  className="ColInfo">
             <h4>Duration</h4>
             <p>{bookData.duration} mins</p>
+            </Col>
+            <Col  className="ColInfo">
             <h4>Genre</h4>
             <p>{bookData.genre.join(', ')}</p>
+            </Col>
+            </Container>
+            
+            {/* Review Form */}
             <Form>
               <h4>Review this movie</h4>
-              {/* ... (previous code) */}
-              <Button type="submit" variant="dark">Submit</Button>
+              <textarea 
+                placeholder="Write a Review"
+                style={styles.textarea}
+              />
+              <StarRating />
+              <Button type="submit" variant="dark" style={styles.button}>Submit</Button>
             </Form>
-            <Rating
-              count={5}
-              onChange={handleRatingChange}
-              size={30}
-              value={bookData.rating}  // Set the initial rating from your data
-              color="#ffd700"
-              activeColor="#ffd700"
-            />
-            <Button variant="dark" onClick={openTrailer} className="trailer-button">
-              Trailer
+
+            {/* Trailer Button */}
+            <Button variant="dark" style={styles.button} onClick={openTrailer} className="trailer-button">
+              Watch Trailer
             </Button>
           </Col>
         </Row>

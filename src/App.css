@@ -2,3 +2,31 @@
     margin-top: 10px;
   }
   
+  input[type="radio"]{
+    display:none;
+  }
+
+  .star{
+    cursor:pointer;
+    transition: color 200ms;
+  }
+
+  .splitInfo{
+    display:flex;
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .AboutContainer{
+    text-align: center;
+    padding-top: 20px;
+    font-size: larger;
+  }
+
+  .tonySoprano{
+    position:fixed;
+    bottom: 0px;
+    height: 50vh;
+  }
+  /* yellow: #ffc107
+  gray: #e4e5e9 */

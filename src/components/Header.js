@@ -35,6 +35,7 @@ export function Header(props) {
         <Navbar.Brand as={Link} to="/"><img src={crimdbLogo} alt="Logo" style={{ width: '200px', height: '100px'}}/></Navbar.Brand>
         <Nav>
           {Links}
+          <Account />
           {<NavDropdown title={props.user.email}>
             <NavDropdown.Item href="/signout">Log out</NavDropdown.Item>
           </NavDropdown> }
