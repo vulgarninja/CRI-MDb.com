@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-gh-pages/static/css/main.15ae05dc.css",
-    "main.js": "/react-gh-pages/static/js/main.8151df62.js",
-    "static/js/787.fe1675bb.chunk.js": "/react-gh-pages/static/js/787.fe1675bb.chunk.js",
-    "static/media/Tony-Soprano.jpg": "/react-gh-pages/static/media/Tony-Soprano.b9f48a67171a9c8d2dc7.jpg",
-    "static/media/logo.png": "/react-gh-pages/static/media/logo.09d445431fe7a1c51852.png",
-    "index.html": "/react-gh-pages/index.html",
-    "main.15ae05dc.css.map": "/react-gh-pages/static/css/main.15ae05dc.css.map",
-    "main.8151df62.js.map": "/react-gh-pages/static/js/main.8151df62.js.map",
-    "787.fe1675bb.chunk.js.map": "/react-gh-pages/static/js/787.fe1675bb.chunk.js.map"
+    "main.css": "/CRI-MDb.com/static/css/main.15ae05dc.css",
+    "main.js": "/CRI-MDb.com/static/js/main.d8c6be7c.js",
+    "static/js/787.fe1675bb.chunk.js": "/CRI-MDb.com/static/js/787.fe1675bb.chunk.js",
+    "static/media/Tony-Soprano.jpg": "/CRI-MDb.com/static/media/Tony-Soprano.b9f48a67171a9c8d2dc7.jpg",
+    "static/media/logo.png": "/CRI-MDb.com/static/media/logo.09d445431fe7a1c51852.png",
+    "index.html": "/CRI-MDb.com/index.html",
+    "main.15ae05dc.css.map": "/CRI-MDb.com/static/css/main.15ae05dc.css.map",
+    "main.d8c6be7c.js.map": "/CRI-MDb.com/static/js/main.d8c6be7c.js.map",
+    "787.fe1675bb.chunk.js.map": "/CRI-MDb.com/static/js/787.fe1675bb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.15ae05dc.css",
-    "static/js/main.8151df62.js"
+    "static/js/main.d8c6be7c.js"
   ]
 }
