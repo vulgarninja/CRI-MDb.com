@@ -68,7 +68,7 @@ export function Signup ( props ) {
               <Form.Control 
                 type="text" 
                 name="username" 
-                placeholder="username" 
+                placeholder="Enter Username" 
                 onChange={ (evt) => setUsername(evt.target.value) }
               />
             </Form.Group>
@@ -86,7 +86,7 @@ export function Signup ( props ) {
               <Form.Control 
                 type="password" 
                 name="password" 
-                placeholder="minimum 8 characters" 
+                placeholder="Minimum 8 Characters" 
                 onChange={(evt) => setUserpassword(evt.target.value) }
               />
             </Form.Group>

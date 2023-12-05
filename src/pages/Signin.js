@@ -72,7 +72,7 @@ export function Signin( props ) {
         <Col md={ {span: 4, offset: 4} }>
           <Form onSubmit={ submitHandler }>
             <Form.Group>
-              <Form.Label>Email</Form.Label>
+              <Form.Label>Email Address</Form.Label>
               <Form.Control 
                 type="email" 
                 name="email" 
@@ -86,7 +86,7 @@ export function Signin( props ) {
               <Form.Control 
                 type="password" 
                 name="password" 
-                placeholder="your password" 
+                placeholder="Your password" 
                 value={ password }
                 onChange={ (evt) => setPassword(evt.target.value) }
               />
